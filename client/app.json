@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/create/sence",
+    "pages/jingfen/jingfen",
+    "pages/addCgi/addCgi",
+    "pages/create/Category",
+    "pages/create/old"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#C1FFC1",
+    "navigationBarTitleText": "曼慢来",
+    "navigationBarTextStyle": "black"
+  }
+}

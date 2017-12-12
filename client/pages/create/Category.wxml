@@ -1,0 +1,24 @@
+<!--pages/create/Category.wxml-->
+<view class="container">
+  <!--类别-->
+  <view class="category" >
+    <view class="flex-item" wx:if="{{iscc0}}">类别
+      <input class="input" name="category0" placeholder="根据类别推荐..."  bindinput='category0Input'/>
+    </view>
+
+    <!--条目1-->
+    <view class="flex-item" wx:if="{{isci00}}">条目1
+      <input class="input" name="c0item0label" placeholder="请输入条目名称..." bindinput='c0item0labelInput'/>
+          <input class="input" name="c0item0prompt" placeholder="请输入条目输入提示语..."  bindinput='c0item0promptInput'/>
+
+    </view>
+  </view>
+
+  <!--类别-->
+  <view class="category" wx:if="{{iscreated}}">{{category1}}
+  <!--条目1-->
+    <view class="flex-item" >{{c1item1label}}
+      <input class="input" name="c1item1" placeholder="{{c1item1prompt}}" />
+    </view>
+  </view>
+</view>

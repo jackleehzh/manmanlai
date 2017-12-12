@@ -1,0 +1,14 @@
+<!--pages/create/create.wxml-->
+<view class="container">
+
+  <!--使用场景-->
+  <view class="sence_name" >
+    <view class="flex-item" wx:if="{{iscs}}">使用场景
+      <input class="input" name="shiyongchangjing" placeholder="护理、自我管理、财务管理..."  bindinput='shiyongchangjingInput'/>
+    </view>
+  </view>
+
+  <!--使用场景-->
+  <view class="sence_name" wx:if="{{iscreated}}">{{shiyongchangjing}}
+  </view>
+</view>

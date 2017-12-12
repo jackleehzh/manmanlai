@@ -1,0 +1,21 @@
+/* pages/form/jingfen.wxss */
+page{
+  background: #F6F6F6;
+}
+
+.flex-item, checkbox-group{
+  padding-top: 5px;
+  background: #fcfff4;
+}
+
+.input{
+  border-width: 4rpx;  
+  border-color: blue;  
+  border-style: solid;
+}
+
+.section__title{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}

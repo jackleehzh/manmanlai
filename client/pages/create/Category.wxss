@@ -1,0 +1,15 @@
+/* pages/create/Category.wxss */
+page{
+  background: #F6F6F6;
+}
+
+.flex-item, checkbox-group{
+  padding-top: 5px;
+  background: #fcfff4;
+}
+
+.input{
+  border-width: 4rpx;  
+  border-color: blue;  
+  border-style: solid;
+}

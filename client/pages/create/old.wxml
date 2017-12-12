@@ -1,0 +1,50 @@
+<!--pages/create/old.wxml-->
+<text>pages/create/old.wxml</text>
+
+<button bindtap='createCategory' wx:if="{{iscs}}">创建类别</button>
+<button bindtap='createItem' wx:if="{{isc}}">创建条目</button>
+<button bindtap='preview' wx:if="{{iscreating}}">预览</button>
+<button bindtap='backToCreate' wx:else>继续编辑</button>
+<button bindtap='submit' wx:if="{{iscreating}}">提交</button>
+<button bindtap='cancel' wx:if="{{iscreating}}">取消</button>
+
+    <view class="flex-item" >睡觉时间
+    <input class="input" name="userName" placeholder="睡觉时间" /></view>
+    <view class="flex-item">起床时间
+    <input class="input" name="userName" placeholder="起床时间" /></view>
+    <view class="flex-item">睡眠时长
+    <input class="input" name="userName" placeholder="睡眠时长" /></view>
+  
+
+  <view class="section__title" >服药</view>
+    <checkbox-group class="checkbox-group" bindchange="checkChange">
+      <label class="checkbox" wx:for="{{items}}" style="display:flex;">
+          <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          <label wx:if="{{item.checked}}">
+            <checkbox value="" />1片
+            <checkbox value="" />2片
+          </label>         
+      </label>  
+    </checkbox-group>
+
+  <view class="section__title" >运动</view>
+  <checkbox-group class="checkbox-group" bindchange="checkChange">
+      <label class="checkbox" wx:for="{{items2}}" style="display:flex;">
+          <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          <label wx:if="{{item.checked}}">
+            <checkbox value="" />15分钟
+            <checkbox value="" />30分钟
+          </label>         
+      </label>  
+    </checkbox-group>
+
+    <view class="section__title" >饮食</view>
+   <checkbox-group class="checkbox-group" bindchange="checkChange">
+      <label class="checkbox" wx:for="{{items3}}" style="display:flex;">
+          <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          <label wx:if="{{item.checked}}">
+            <checkbox value="" />100克
+            <checkbox value="" />200克
+          </label>         
+      </label>  
+    </checkbox-group>

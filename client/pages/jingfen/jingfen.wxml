@@ -1,0 +1,46 @@
+<!--pages/form/jingfen.wxml-->
+<view class="container">
+<view class="section__title" >精分护理记录</view>
+  <view class="section__title" >睡眠</view>
+  <label class="flex-wrp">
+    <view class="flex-item">睡觉时间
+    <input class="input" name="userName" placeholder="睡觉时间" /></view>
+    <view class="flex-item">起床时间
+    <input class="input" name="userName" placeholder="起床时间" /></view>
+    <view class="flex-item">睡眠时长
+    <input class="input" name="userName" placeholder="睡眠时长" /></view>
+  </label>
+
+  <view class="section__title" >服药</view>
+    <checkbox-group class="checkbox-group" bindchange="checkChange">
+      <label class="checkbox" wx:for="{{items}}" style="display:flex;">
+          <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          <label wx:if="{{item.checked}}">
+            <checkbox value="" />1片
+            <checkbox value="" />2片
+          </label>         
+      </label>  
+    </checkbox-group>
+
+  <view class="section__title" >运动</view>
+  <checkbox-group class="checkbox-group" bindchange="checkChange">
+      <label class="checkbox" wx:for="{{items2}}" style="display:flex;">
+          <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          <label wx:if="{{item.checked}}">
+            <checkbox value="" />15分钟
+            <checkbox value="" />30分钟
+          </label>         
+      </label>  
+    </checkbox-group>
+
+    <view class="section__title" >饮食</view>
+   <checkbox-group class="checkbox-group" bindchange="checkChange">
+      <label class="checkbox" wx:for="{{items3}}" style="display:flex;">
+          <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          <label wx:if="{{item.checked}}">
+            <checkbox value="" />100克
+            <checkbox value="" />200克
+          </label>         
+      </label>  
+    </checkbox-group>
+</view>
